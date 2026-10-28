@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHER — Premium Clothing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+                  url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070') center/cover;
+    }
+    
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+    
+    .product-card img {
+      transition: transform 0.5s ease;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold tracking-widest">AETHER</a>
+      
+      <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide">
+        <a href="#shop" class="hover:text-gray-500 transition">SHOP</a>
+        <a href="#collections" class="hover:text-gray-500 transition">COLLECTIONS</a>
+        <a href="#about" class="hover:text-gray-500 transition">ABOUT</a>
+        <a href="#contact" class="hover:text-gray-500 transition">CONTACT</a>
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <button class="hover:text-gray-500 transition">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="hover:text-gray-500 transition relative">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">2</span>
+        </button>
+        <button class="md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center text-white">
+    <div class="px-6">
+      <p class="text-sm tracking-[0.3em] mb-4 uppercase">New Season</p>
+      <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-6">ESSENTIAL<br>ELEVATED</h1>
+      <p class="text-lg md:text-xl font-light mb-10 max-w-xl mx-auto opacity-90">
+        Timeless pieces designed for the modern wardrobe.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#shop" class="bg-white text-black px-10 py-4 text-sm font-medium tracking-widest hover:bg-gray-100 transition">
+          SHOP NOW
+        </a>
+        <a href="#collections" class="border border-white px-10 py-4 text-sm font-medium tracking-widest hover:bg-white hover:text-black transition">
+          VIEW LOOKBOOK
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section id="collections" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-light tracking-wide mb-3">COLLECTIONS</h2>
+        <p class="text-gray-500">Curated for everyday excellence</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Category 1 -->
+        <a href="#" class="group relative overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1000" 
+               alt="Men" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-black/30 flex items-end p-8">
+            <div>
+              <h3 class="text-white text-2xl font-light tracking-wide">MEN</h3>
+              <p class="text-white/80 text-sm mt-1">Shop Collection →</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="#" class="group relative overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=1000" 
+               alt="Women" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-black/30 flex items-end p-8">
+            <div>
+              <h3 class="text-white text-2xl font-light tracking-wide">WOMEN</h3>
+              <p class="text-white/80 text-sm mt-1">Shop Collection →</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="#" class="group relative overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000" 
+               alt="Accessories" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-black/30 flex items-end p-8">
+            <div>
+              <h3 class="text-white text-2xl font-light tracking-wide">ACCESSORIES</h3>
+              <p class="text-white/80 text-sm mt-1">Shop Collection →</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="shop" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+          <h2 class="text-3xl font-light tracking-wide mb-2">NEW ARRIVALS</h2>
+          <p class="text-gray-500">Just dropped</p>
+        </div>
+        <a href="#" class="text-sm font-medium tracking-wide hover:underline">VIEW ALL →</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Product 1 -->
+        <div class="product-card group">
+          <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800" 
+                 alt="Essential Tee" class="w-full h-full object-cover">
+            <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition translate-y-2 group-hover:translate-y-0">
+              ADD TO BAG
+            </button>
+          </div>
+          <h3 class="font-medium">Essential Oversized Tee</h3>
+          <p class="text-gray-500 text-sm mt-1">$48</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card group">
+          <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800" 
+                 alt="Wool Coat" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-black text-white text-xs px-3 py-1">NEW</span>
+            <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition translate-y-2 group-hover:translate-y-0">
+              ADD TO BAG
+            </button>
+          </div>
+          <h3 class="font-medium">Structured Wool Coat</h3>
+          <p class="text-gray-500 text-sm mt-1">$248</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card group">
+          <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800" 
+                 alt="Denim" class="w-full h-full object-cover">
+            <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition translate-y-2 group-hover:translate-y-0">
+              ADD TO BAG
+            </button>
+          </div>
+          <h3 class="font-medium">Relaxed Fit Denim</h3>
+          <p class="text-gray-500 text-sm mt-1">$128</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card group">
+          <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800" 
+                 alt="Knit" class="w-full h-full object-cover">
+            <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition translate-y-2 group-hover:translate-y-0">
+              ADD TO BAG
+            </button>
+          </div>
+          <h3 class="font-medium">Merino Knit Sweater</h3>
+          <p class="text-gray-500 text-sm mt-1">$98</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="relative h-[70vh] flex items-center">
+    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070" 
+         alt="Banner" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative max-w-7xl mx-auto px-6 text-white">
+      <p class="text-sm tracking-[0.3em] mb-4 uppercase">Limited Edition</p>
+      <h2 class="text-4xl md:text-6xl font-light mb-6">The Winter<br>Edit</h2>
+      <a href="#" class="inline-block border border-white px-10 py-4 text-sm tracking-widest hover:bg-white hover:text-black transition">
+        EXPLORE NOW
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-light tracking-wide mb-8">OUR STORY</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        AETHER was born from a simple idea — clothing should feel as good as it looks. 
+        We design timeless pieces using premium materials, focusing on clean silhouettes 
+        and exceptional craftsmanship. Less noise. More substance.
+      </p>
+      <a href="#" class="text-sm font-medium tracking-wide underline underline-offset-4 hover:text-gray-500">
+        LEARN MORE
+      </a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-black text-white py-20">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-light tracking-wide mb-4">JOIN THE LIST</h2>
+      <p class="text-gray-400 mb-8">Be the first to know about new drops and exclusive offers.</p>
+      <form class="flex flex-col sm:flex-row gap-3">
+        <input type="email" placeholder="Your email address" 
+               class="flex-1 px-6 py-4 bg-transparent border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-white">
+        <button type="submit" class="bg-white text-black px-8 py-4 text-sm font-medium tracking-widest hover:bg-gray-200 transition">
+          SUBSCRIBE
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="text-xl font-bold tracking-widest mb-6">AETHER</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Premium essentials for the modern individual.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-medium mb-4 text-sm tracking-wide">SHOP</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="#" class="hover:text-black">Men</a></li>
+            <li><a href="#" class="hover:text-black">Women</a></li>
+            <li><a href="#" class="hover:text-black">Accessories</a></li>
+            <li><a href="#" class="hover:text-black">Sale</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-medium mb-4 text-sm tracking-wide">HELP</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="#" class="hover:text-black">Shipping</a></li>
+            <li><a href="#" class="hover:text-black">Returns</a></li>
+            <li><a href="#" class="hover:text-black">Size Guide</a></li>
+            <li><a href="#" class="hover:text-black">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-medium mb-4 text-sm tracking-wide">FOLLOW</h4>
+          <div class="flex space-x-5 text-gray-500">
+            <a href="#" class="hover:text-black"><i class="fa-brands fa-instagram text-lg"></i></a>
+            <a href="#" class="hover:text-black"><i class="fa-brands fa-tiktok text-lg"></i></a>
+            <a href="#" class="hover:text-black"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+            <a href="#" class="hover:text-black"><i class="fa-brands fa-pinterest text-lg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>© 2026 AETHER. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-black">Privacy</a>
+          <a href="#" class="hover:text-black">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
