@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Directory & Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Logo -->
+    <header>
+        <div class="logo">
+            <img src="https://picsum.photos/id/1084/100/100" alt="Logo">
+            <span>DevCommunity</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Users</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner Image Section -->
+    <section class="banner">
+        <h1>Welcome to Our Community</h1>
+        <p>Connect with professional developers, designers, and innovators from around the world.</p>
+    </section>
+
+    <!-- Main Content & User List Section -->
+    <main class="container">
+        <div class="section-title">
+            <h2>Active Users Directory</h2>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search user by name..." onkeyup="filterUsers()">
+        </div>
+
+        <div class="user-grid" id="userGrid">
+            <!-- User 1 -->
+            <div class="user-card">
+                <img src="https://picsum.photos/id/64/150/150" alt="User Image">
+                <h3>Aarav Sharma</h3>
+                <p class="role">UI/UX Designer</p>
+                <p class="email">aarav.sharma@example.com</p>
+                <a href="#" class="btn-profile">View Profile</a>
+            </div>
+
+            <!-- User 2 -->
+            <div class="user-card">
+                <img src="https://picsum.photos/id/1025/150/150" alt="User Image">
+                <h3>Angle Priya</h3>
+                <p class="role">Frontend Developer</p>
+                <p class="email">priya.v@example.com</p>
+                <a href="#" class="btn-profile">View Profile</a>
+            </div>
+
+            <!-- User 3 -->
+            <div class="user-card">
+                <img src="https://picsum.photos/id/338/150/150" alt="User Image">
+                <h3>ballu bhai</h3>
+                <p class="role">Graphic Designer</p>
+                <p class="email">rahul.k@example.com</p>
+                <a href="#" class="btn-profile">View Profile</a>
+            </div>
+
+            <!-- User 4 -->
+            <div class="user-card">
+                <img src="https://picsum.photos/id/1062/150/150" alt="User Image">
+                <h3>Neha Singh</h3>
+                <p class="role">Project Manager</p>
+                <p class="email">neha.singh@example.com</p>
+                <a href="#" class="btn-profile">View Profile</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevCommunity. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
